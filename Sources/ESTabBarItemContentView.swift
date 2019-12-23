@@ -97,7 +97,11 @@ open class ESTabBarItemContentView: UIView {
             self.updateLayout()
         }
     }
-    
+    open var titleFont: UIFont? {
+        didSet {
+            self.updateLayout()
+        }
+    }
     /// Icon imageView renderingMode, default is .alwaysTemplate like UITabBarItem
     open var renderingMode: UIImage.RenderingMode = .alwaysTemplate {
         didSet {
